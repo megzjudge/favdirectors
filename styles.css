@@ -94,8 +94,19 @@ h2 {
     line-height: 1.5;
 }
 
+.footer {
+    margin-top: 20px;
+}
+
+.footer p {
+    color: rgb(255, 147, 41); /* Warm orange for copyright */
+    font-size: calc(18px + 0.390625vw); /* Match series-details size */
+    line-height: 1.8;
+}
+
 @font-face {
     font-family: 'greater_foundation';
     src: url('font/greater_foundation.otf');
     font-style: normal;
 }
+
