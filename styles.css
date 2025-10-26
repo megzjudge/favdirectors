@@ -77,6 +77,9 @@ section img:not(.footer img):not(p img) { /* Target director images, exclude foo
     height: auto;
     object-fit: contain; /* Show entire image without cropping */
     margin-top: 15px; /* Reduced from 25px */
+    border: 5px solid rgb(255, 255, 255); /* Thin white border */
+    box-shadow: 0 0 20px rgba(0, 127, 99, 0.6), 0 0 40px rgba(0, 127, 99, 0.3); /* Thicker green glow shadow matching titles */
+    border-radius: 12px; /* Curved corners */
 }
 
 a {
@@ -94,6 +97,7 @@ h1 {
     font-family: 'greater_foundation', fantasy;
     line-height: 1.3; /* Tightened to save space */
     color: rgb(0, 127, 99); /* Match link color for consistency */
+    text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.5), 2px 2px 5px black; /* Thicker white drop shadow with 0 blur + existing black drop shadow */
 }
 
 h2 {
@@ -102,6 +106,7 @@ h2 {
     font-size: calc(84px + 0.390625vw); /* Increased from 76px for larger titles */
     line-height: 1.2; /* Tightened to save space */
     flex-shrink: 1;
+    text-shadow: 5px 5px 0px rgba(255, 255, 255, 0.5), 2px 2px 5px black; /* Thicker white drop shadow scaled for larger text with 0 blur + existing black drop shadow */
 }
 
 h3 {
@@ -111,6 +116,7 @@ h3 {
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 1.3;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5), 2px 2px 5px black; /* Thicker white drop shadow scaled for smaller text with 0 blur + existing black drop shadow */
 }
 
 p:not(.footer p) { /* Target text paragraphs, exclude footer */
@@ -139,22 +145,34 @@ p:not(.footer p) { /* Target text paragraphs, exclude footer */
 @media (max-width: 600px) {
     h1 {
         font-size: 2.5rem;
+        text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.842), 2px 2px 5px black; /* Adjusted thicker white drop shadow with 0 blur for smaller text */
     }
+
     h2 {
         font-size: calc(60px + 0.390625vw); /* Slightly smaller than main but larger than before */
+        text-shadow: 2.5px 2.5px 0px rgba(255, 255, 255, 0.842), 2px 2px 5px black; /* Adjusted thicker white drop shadow with 0 blur for smaller text */
     }
+
     h3 {
         font-size: calc(20px + 0.390625vw);
+        text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.842), 2px 2px 5px black; /* Adjusted thicker white drop shadow with 0 blur for smaller text */
     }
+
     p:not(.footer p) {
         font-size: calc(12px + 0.390625vw);
     }
+
     .footer p {
         font-size: calc(12px + 0.390625vw);
     }
+
     section img:not(.footer img):not(p img) {
         max-height: 30vh; /* Further reduce image height on small screens */
+        border: 3px solid rgb(255, 255, 255); /* Slightly thinner white border on small screens */
+        box-shadow: 0 0 15px rgba(0, 127, 99, 0.5), 0 0 30px rgba(0, 127, 99, 0.2); /* Thicker but adjusted softer green glow on small screens */
+        border-radius: 8px; /* Adjusted curved corners for smaller screens */
     }
+
     section p img {
         width: 36px;
         height: 36px;
