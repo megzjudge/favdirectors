@@ -106,7 +106,7 @@ h2 {
     font-size: calc(84px + 0.390625vw); /* Increased from 76px for larger titles */
     line-height: 1.2; /* Tightened to save space */
     flex-shrink: 1;
-    text-shadow: 5px 5px 0px rgba(255, 255, 255, 0.5), 2px 2px 5px black; /* Thicker white drop shadow scaled for larger text with 0 blur + existing black drop shadow */
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5), 2px 2px 5px black; /* Thicker white drop shadow scaled for larger text with 0 blur + existing black drop shadow */
 }
 
 h3 {
