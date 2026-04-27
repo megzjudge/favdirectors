@@ -8,33 +8,33 @@
 }    
 
 html {
-    background: rgb(35, 0, 36);
+    background: rgb(7, 49, 78); /* FIXED */
     text-shadow: 2px 2px 5px black;
-    scrollbar-color: rgba(78, 110, 57, 1) rgba(35, 0, 36, 1); /* Gecko */
-    scrollbar-width: thin; /* Gecko */
+    scrollbar-color: rgba(78, 110, 57, 1) rgb(7, 49, 78); /* FIXED */
+    scrollbar-width: thin;
     scroll-snap-type: y mandatory;
 }
 
-html::-webkit-scrollbar { /* Chromium */
+html::-webkit-scrollbar {
     width: 10px;
 }
 
-html::-webkit-scrollbar-track { /* Chromium */
-    background: rgba(35, 0, 36, 1);
+html::-webkit-scrollbar-track {
+    background: rgb(7, 49, 78); /* FIXED */
     box-shadow: inset 1px 1px 5px black;
 }
 
-html::-webkit-scrollbar-thumb { /* Chromium */
+html::-webkit-scrollbar-thumb {
     background: linear-gradient(0deg, rgba(78, 110, 57, 1), rgb(41, 58, 30));
     border-radius: 10px;
 }
 
-html::-webkit-scrollbar-thumb:hover { /* Chromium */
+html::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(0deg, rgba(100, 130, 70, 1), rgb(50, 70, 40));
     border-radius: 10px;
 }
 
-html::-webkit-scrollbar-thumb:active { /* Chromium */
+html::-webkit-scrollbar-thumb:active {
     background: linear-gradient(0deg, rgba(60, 90, 50, 1), rgb(30, 50, 20));
     border-radius: 10px;
 }
@@ -97,13 +97,13 @@ h1 {
     font-size: 3.5rem;
     font-family: 'mathevas', fantasy;
     line-height: 1.3;
-    color: rgba(35, 0, 36, 1);
+    color: rgb(0, 127, 99);
     text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.5), 2px 2px 5px black;
     font-weight: 400;
 }
 
 h2 {
-    color: rgba(35, 0, 36, 1);
+    color: rgb(0, 127, 99);
     font-family: 'mathevas', fantasy;
     font-size: calc(84px + 0.390625vw);
     line-height: 1.2;
@@ -115,7 +115,7 @@ h2 {
 h3 {
     font-size: calc(24px + 0.390625vw);
     font-family: 'mathevas', fantasy;
-    color: rgba(35, 0, 36, 1);
+    color: rgb(0, 127, 99);
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 1.3;
@@ -187,7 +187,6 @@ p:not(.footer p) {
     font-display: swap;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 600px) {
     h1 {
         font-size: 2.5rem;
