@@ -139,7 +139,7 @@ p:not(.footer p) { /* Target text paragraphs, exclude footer */
     inset: 0;
     pointer-events: none;
     overflow: hidden;
-    z-index: 2;
+    z-index: 9999;
 }
 
 .firefly {
@@ -151,47 +151,28 @@ p:not(.footer p) { /* Target text paragraphs, exclude footer */
         0 0 8px rgba(218, 255, 117, 0.95),
         0 0 18px rgba(143, 255, 99, 0.65),
         0 0 34px rgba(0, 127, 99, 0.45);
-    opacity: 0;
-    animation-name: firefly-float, firefly-glow;
-    animation-timing-function: ease-in-out, ease-in-out;
-    animation-iteration-count: infinite, infinite;
-    animation-direction: alternate, alternate;
+    opacity: 0.8;
+    animation: firefly-float 12s ease-in-out infinite alternate,
+               firefly-glow 2.8s ease-in-out infinite alternate;
 }
 
 @keyframes firefly-float {
-    0% {
+    from {
         transform: translate(0, 0) scale(0.8);
     }
 
-    50% {
-        transform: translate(calc(var(--drift-x) * 0.45), calc(var(--drift-y) * -0.35)) scale(1.15);
-    }
-
-    100% {
-        transform: translate(var(--drift-x), var(--drift-y)) scale(0.9);
+    to {
+        transform: translate(var(--drift-x), var(--drift-y)) scale(1.2);
     }
 }
 
 @keyframes firefly-glow {
-    0%, 100% {
-        opacity: 0.18;
-        filter: blur(0px);
+    from {
+        opacity: 0.15;
     }
 
-    45% {
-        opacity: 0.95;
-        filter: blur(0.4px);
-    }
-
-    70% {
-        opacity: 0.35;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .firefly {
-        animation: none;
-        opacity: 0.35;
+    to {
+        opacity: 1;
     }
 }
 
