@@ -49,6 +49,7 @@ section {
     text-align: center;
     scroll-snap-align: start;
     overflow: hidden;
+    z-index: 1;
 }
 
 .page {
@@ -138,7 +139,7 @@ p:not(.footer p) {
     inset: 0;
     pointer-events: none;
     overflow: hidden;
-    z-index: 9999;
+    z-index: 0;
 }
 
 .firefly {
