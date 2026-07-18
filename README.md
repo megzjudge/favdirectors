@@ -2,8 +2,6 @@
 
 Personal list of favourite directors (and producers) — a static site, plain HTML/CSS/JS — no dependencies.
 
-🔗 Live at [directors.jdge.cc](https://directors.jdge.cc/)
-
 ## What it is
 
 - Directors, each shown as a portrait entry in a single scrolling "program."<br>
