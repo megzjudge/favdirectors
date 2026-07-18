@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const FIREFLY_COUNT = 42;
+    if (!window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+        return;
+    }
 
-    const layer = document.createElement("div");
-    layer.className = "firefly-layer";
-    document.body.appendChild(layer);
+    const FIREFLY_COUNT = 26;
+    const layer = document.getElementById("fireflyLayer");
 
     for (let i = 0; i < FIREFLY_COUNT; i++) {
         const firefly = document.createElement("span");
