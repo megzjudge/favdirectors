@@ -75,7 +75,7 @@ body {
 h1 {
   font-family: 'Mathevas', fantasy;
   font-weight: 400;
-  font-size: clamp(2.2rem, 7.5vw, 5.625rem);
+  font-size: clamp(2.2rem, 6.8vw, 5rem);
   line-height: 1.18;
   color: var(--parchment);
   text-shadow: 2px 2px 0 rgba(7,23,38,0.9), 0 0 24px rgba(23,180,145,0.25);
@@ -171,8 +171,13 @@ footer a { color: var(--firefly); text-decoration: none; border-bottom: 1px soli
 footer a:hover { color: var(--accent); border-bottom-color: currentColor; }
 
 @media (max-width: 640px) {
-  .entry, .entry:nth-of-type(even) { flex-direction: column; align-items: flex-start; }
-  .entry-text, .entry:nth-of-type(even) .entry-text { text-align: left; align-items: flex-start; }
-  .entry:nth-of-type(even) .entry-links, .entry:nth-of-type(even) .entry-person { flex-direction: row; justify-content: flex-start; }
-  .entry-portrait { width: min(70vw, 300px); }
+  .entry { flex-direction: column; align-items: flex-start; }
+  .entry-text { text-align: left; align-items: flex-start; }
+  .entry-links, .entry-person { flex-direction: row; justify-content: flex-start; }
+
+  .entry:nth-of-type(even) { flex-direction: column; align-items: flex-end; }
+  .entry:nth-of-type(even) .entry-text { text-align: right; align-items: flex-end; }
+  .entry:nth-of-type(even) .entry-links, .entry:nth-of-type(even) .entry-person { flex-direction: row; justify-content: flex-end; }
+
+  .entry-portrait { width: min(50vw, 220px); }
 }
