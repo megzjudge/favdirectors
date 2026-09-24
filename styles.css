@@ -62,7 +62,7 @@ body {
 .marquee { text-align: center; margin-bottom: clamp(3rem, 7vw, 5rem); }
 
 .mark { display: inline-flex; align-items: center; gap: 0.6rem; margin-bottom: 1.1rem; }
-.mark img { width: 26px; height: 26px; filter: drop-shadow(0 0 6px rgba(23,180,145,0.6)); }
+.mark img { width: 26px; height: 26px; filter: drop-shadow(0 0 6px rgba(228,255,140,0.6)); }
 
 .eyebrow {
   font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
@@ -151,7 +151,7 @@ h1 {
 }
 .entry-films em { font-style: italic; }
 
-.film-icon { font-style: normal; margin-right: 0.5em; filter: drop-shadow(0 0 4px rgba(23,180,145,0.4)); }
+.film-icon { font-style: normal; margin-right: 0.5em; filter: drop-shadow(0 0 4px rgba(228,255,140,0.4)); }
 
 .entry-links, .entry-person { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
 .entry-person { margin-bottom: 0.35rem; }
@@ -167,8 +167,8 @@ h1 {
 .entry-links a:hover img, .entry-person a:hover img { filter: drop-shadow(0 0 7px rgba(228, 255, 140, 0.85)); }
 
 footer { position: relative; z-index: 1; text-align: center; padding: 3rem 1rem 1rem; color: var(--ash); font-size: 0.82rem; }
-footer a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
-footer a:hover { color: var(--firefly); border-bottom-color: currentColor; }
+footer a { color: var(--firefly); text-decoration: none; border-bottom: 1px solid transparent; }
+footer a:hover { color: var(--accent); border-bottom-color: currentColor; }
 
 @media (max-width: 640px) {
   .entry, .entry:nth-of-type(even) { flex-direction: column; align-items: flex-start; }
