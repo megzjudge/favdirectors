@@ -151,7 +151,7 @@ h1 {
 }
 .entry-films em { font-style: italic; }
 
-.film-icon { font-style: normal; margin-right: 0.5em; filter: drop-shadow(0 0 4px rgba(228,255,140,0.4)); }
+.film-icon { font-style: normal; margin-right: 0.5em; filter: drop-shadow(0 0 1px rgba(228,255,140,0.25)); }
 
 .entry-links, .entry-person { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
 .entry-person { margin-bottom: 0.35rem; }
