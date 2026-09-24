@@ -75,7 +75,7 @@ body {
 h1 {
   font-family: 'Mathevas', fantasy;
   font-weight: 400;
-  font-size: clamp(2rem, 5.2vw, 3.6rem);
+  font-size: clamp(2.2rem, 7.5vw, 5.625rem);
   line-height: 1.18;
   color: var(--parchment);
   text-shadow: 2px 2px 0 rgba(7,23,38,0.9), 0 0 24px rgba(23,180,145,0.25);
